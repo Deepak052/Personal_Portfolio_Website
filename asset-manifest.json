@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Personal_Portfolio_Website/static/css/main.7eb7da32.css",
+    "main.js": "/Personal_Portfolio_Website/static/js/main.383eaf57.js",
+    "static/js/496.1811ca5a.chunk.js": "/Personal_Portfolio_Website/static/js/496.1811ca5a.chunk.js",
+    "static/media/Avatar.png": "/Personal_Portfolio_Website/static/media/Avatar.e0f561471838011141a7.png",
+    "static/media/homeicons.svg": "/Personal_Portfolio_Website/static/media/homeicons.635077bdda0ab43ae14208bcfda93699.svg",
+    "static/media/NetflixClone.jpeg": "/Personal_Portfolio_Website/static/media/NetflixClone.0ee70eb616a125ab667e.jpeg",
+    "static/media/about.png": "/Personal_Portfolio_Website/static/media/about.0d89b152b9d060142e14.png",
+    "static/media/portfolio.png": "/Personal_Portfolio_Website/static/media/portfolio.b82cd61ba5091b239389.png",
+    "static/media/Yumxpress.png": "/Personal_Portfolio_Website/static/media/Yumxpress.b39d15f64af84d8e14d9.png",
+    "static/media/pre.svg": "/Personal_Portfolio_Website/static/media/pre.74b00c043f4cea5fb393.svg",
+    "index.html": "/Personal_Portfolio_Website/index.html",
+    "main.7eb7da32.css.map": "/Personal_Portfolio_Website/static/css/main.7eb7da32.css.map",
+    "main.383eaf57.js.map": "/Personal_Portfolio_Website/static/js/main.383eaf57.js.map",
+    "496.1811ca5a.chunk.js.map": "/Personal_Portfolio_Website/static/js/496.1811ca5a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eb7da32.css",
+    "static/js/main.383eaf57.js"
+  ]
+}
