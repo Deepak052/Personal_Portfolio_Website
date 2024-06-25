@@ -7,7 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/footer/Footer";
 import { ThemeContext } from "./Context/theme";
 import Techstack  from "./components/TechStack/Techstack";
-import about from "./components/About/About"
+
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +17,7 @@ import {
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [load, upadateLoad] = useState(true);

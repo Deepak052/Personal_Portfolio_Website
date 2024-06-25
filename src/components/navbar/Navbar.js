@@ -84,6 +84,16 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
+              <Nav.Link
+                href="../../Assets/Projects/Resume_Me.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => updateExpanded(false)}
+              >
+                Resume
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
               <div className="theme-switch">
                 <div id="toggle" onClick={toggeltheme}>
                   <div className="toggle-inner" />
