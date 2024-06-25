@@ -32,7 +32,7 @@ function Home2() {
               <br />
               <br />I enjoy learning
               <i>
-                <i className="primary-header"> new skills and implementing</i>them in real 
+                <i className="primary-header"> new skills and implementing</i> them in real 
                 life!
               </i>
               <br />
