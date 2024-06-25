@@ -13,7 +13,7 @@ You can fork this repo to modify and make changes according to your need. Please
 
 ## Built With
 
-My personal portfolio website <a href="https://deepak052.github.io/Personal_Portfolio_Website/" target="_blank">rahul jha</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio website <a href="https://deepak052.github.io/Personal_Portfolio_Website/" target="_blank">Deepak Mehta</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project is built using these technologies.
 
