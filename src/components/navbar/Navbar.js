@@ -84,15 +84,17 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link
-                href="../../Assets/Projects/Resume_Me.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => updateExpanded(false)}
-              >
-                Resume
-              </Nav.Link>
-            </Nav.Item>
+  <a
+    href="https://drive.google.com/file/d/1x9qskqUmat4VG_t9PTl77-2o69uBgOru/view?usp=drive_link"
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => updateExpanded(false)}
+    className="nav-link"  // Add Bootstrap's nav-link class for styling
+  >
+    Resume
+  </a>
+</Nav.Item>
+
             <Nav.Item>
               <div className="theme-switch">
                 <div id="toggle" onClick={toggeltheme}>
