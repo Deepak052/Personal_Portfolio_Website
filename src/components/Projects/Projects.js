@@ -7,6 +7,7 @@ import YumXpress from "../../Assets/Projects/Yumxpress.png";
 import "./project.css";
 import portfolio from "../../Assets/Projects/portfolio.png"
 import Weather from "../../Assets/Projects/Weather.jpeg"
+import SoulTravel from "../../Assets/Projects/SoulTravel.png"
 
 function Projects() {
   return (
@@ -51,6 +52,15 @@ function Projects() {
               imgPath={Weather}
               title="Dynamic weather App"
               description="Check out this weather app I built! It uses a bunch of cool technologies like HTML, CSS, and JavaScript for the design, but gets its weather data live from the internet using Java and stuff called Servlets and JSP. So basically, you type in your city and it pulls in real-time weather information."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
+                 <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={SoulTravel}
+              title="Soul Travel"
+              description="Check out this Soul Travel landing Page! It uses a bunch of cool technologies like HTML, CSS, and JavaScript for the design."
               ghLink="#"
               demoLink="#"
             />
