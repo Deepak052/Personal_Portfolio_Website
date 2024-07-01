@@ -7,6 +7,7 @@ import YumXpress from "../../Assets/Projects/Yumxpress.png";
 import "./project.css";
 import portfolio from "../../Assets/Projects/portfolio.png"
 import Weather from "../../Assets/Projects/Weather.jpeg"
+import SoulTravel from "../../Assets/Projects/SoulTravel.png"
 
 function Projects() {
   return (
