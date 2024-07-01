@@ -55,6 +55,15 @@ function Projects() {
               demoLink="#"
             />
           </Col>
+                 <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={SoulTravel}
+              title="Soul Travel"
+              description="Check out this Soul Travel landing Page! It uses a bunch of cool technologies like HTML, CSS, and JavaScript for the design."
+              ghLink="#"
+              demoLink="#"
+            />
+          </Col>
           
         </Row>
       </Container>
