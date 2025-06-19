@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import ProjectCard from "./ProjectCards";
-import NetflixClone from "../../Assets/Projects/NetflixClone.jpeg"
-import YumXpress from "../../Assets/Projects/Yumxpress.png";
+import NetflixClone from "../../assets/Projects/NetflixClone.jpeg";
+import YumXpress from "../../assets/Projects/Yumxpress.png";
 import "./project.css";
-import portfolio from "../../Assets/Projects/portfolio.png"
-import Weather from "../../Assets/Projects/Weather.jpeg"
-import SoulTravel from "../../Assets/Projects/SoulTravel.png"
+import portfolio from "../../assets/Projects/portfolio.png"
+import Weather from "../../assets/Projects/Weather.jpeg"
+import SoulTravel from "../../assets/Projects/SoulTravel.png"
 
 function Projects() {
   return (
