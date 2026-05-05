@@ -8,54 +8,65 @@ import {
   DiJava,
   DiBootstrap
 } from "react-icons/di";
-import { SiRedux, SiTailwindcss } from "react-icons/si"; 
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiMysql,
+  SiGithub
+} from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 import Toolstack from "./Toolstack";
+import data from "../../data.json";
+
+const iconComponents = {
+  DiHtml5,
+  DiCss3,
+  DiJavascript1,
+  DiReact,
+  DiJava,
+  DiBootstrap,
+  SiTailwindcss,
+  SiRedux,
+  SiMysql,
+  SiGithub,
+  VscVscode
+};
 
 function Techstack() {
+  const { skills } = data;
+
+  const allSkills = [
+    ...(skills.frontend || []),
+    ...(skills.backend || []),
+    ...(skills.languages || [])
+  ];
+
   return (
     <Row style={{ justifyContent: "center", padding: "10px" }}>
-      <Col
-        md={7}
-        style={{
-          justifyContent: "center",
-          paddingTop: "30px",
-          paddingBottom: "50px",
-        }}
-      ></Col>
       <h1 data-aos="fade-right">
         <span className="primary-header">Skillset</span> I Work With
       </h1>
 
-      <div data-aos="fade-up"></div>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiHtml5 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiCss3 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
+      {allSkills.map((skill, index) => {
+        const Icon = iconComponents[skill.icon];
+        if (!Icon) return null;
 
-      <Col xs={4} md={2} className="tech-icons">
-        <DiBootstrap />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedux />
-      </Col>
+        return (
+          <Col
+            xs={4}
+            md={2}
+            className="tech-icons"
+            key={index}
+            title={skill.name}
+          >
+            <Icon />
+          </Col>
+        );
+      })}
 
       <div data-aos="fade-up">
-        <Toolstack data-aos="fade-up" />
+        <Toolstack />
       </div>
     </Row>
   );

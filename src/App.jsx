@@ -44,7 +44,7 @@ function App() {
             <Route path="/project" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Navigate to="/" />} />
-            <Route path="/TechStack" element={<Techstack />} />
+            <Route path="/TechStack" element={<div style={{ paddingTop: "100px" }}><Techstack /></div>} />
             <Route path="/About" element={<About />} />
           </Routes>
           <Footer />

@@ -3,8 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { ThemeContext } from "../../Context/theme";
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./navbar.css";
+import data from "../../data.json";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -62,13 +63,13 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={NavLink} to="/" onClick={() => updateExpanded(false)}>
                 Home
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                as={NavLink}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
@@ -77,7 +78,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                as={NavLink}
                 to="/experience"
                 onClick={() => updateExpanded(false)}
               >
@@ -86,7 +87,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                as={NavLink}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -95,7 +96,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                as={NavLink}
                 to="/TechStack"
                 onClick={() => updateExpanded(false)}
               >
@@ -104,7 +105,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <a
-                href="https://drive.google.com/file/d/17c1b3aMBMY9LqfVUDMTLp40KMTqBkTSx/view?usp=drive_link"
+                href={data.personalInfo.resumeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => updateExpanded(false)}

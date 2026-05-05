@@ -1,0 +1,219 @@
+{
+  "personalInfo": {
+    "name": "Deepak Mehta",
+    "role": "Full Stack Developer",
+    "location": "Noida, Uttar Pradesh, India",
+    "phone": "+91-7873468788",
+    "email": "dmehta052@gmail.com",
+    "degree": "B.Tech Computer Science & Engineering",
+    "university": "Sagar Institute of Research & Technology, Bhopal",
+    "duration": "2020-2024",
+    "cgpa": "7.92",
+    "currentRole": "Frontend Developer",
+    "company": "DOJ App Pvt. Ltd.",
+    "companyLocation": "Noida",
+    "resumeLink": "https://drive.google.com/file/d/17c1b3aMBMY9LqfVUDMTLp40KMTqBkTSx/view"
+  },
+  "socialLinks": {
+    "github": "https://github.com/Deepak052",
+    "email": "dmehta052@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/deepakmehta052/",
+    "instagram": "https://www.instagram.com/_.deepak_.mehta._/"
+  },
+  "about": {
+    "summary": "Full Stack Developer with strong expertise in React.js, Redux Toolkit, and modern frontend architecture, along with hands-on experience in Node.js, Express.js, and MongoDB.",
+    "techHighlight": [
+      "React.js",
+      "TailwindCSS",
+      "Redux Toolkit"
+    ],
+    "learning": "new technologies",
+    "projectsHighlight": [
+      "ShopSphere",
+      "GupShup",
+      "Yum Xpress"
+    ],
+    "activities": [
+      "playing cricket",
+      "traveling"
+    ]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "DOJ App Pvt. Ltd.",
+      "location": "Noida, India",
+      "duration": "Apr 2025 – Present",
+      "responsibilities": [
+        "Built and optimized scalable frontend applications for User Website, Partner App, and Super Admin Panel using React.js, Redux Toolkit, and TailwindCSS.",
+        "Designed and implemented authentication, registration, and onboarding flows with role-based UI rendering.",
+        "Integrated REST APIs for cart, orders, payments, wallet, coupons, and cashback with optimized state management.",
+        "Implemented real-time order and rider tracking using WebSockets for live UI updates.",
+        "Integrated Razorpay payment gateway and improved performance via code splitting and reusable components."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "React Developer Intern",
+      "company": "DOJ App Pvt. Ltd.",
+      "location": "Noida, India",
+      "duration": "Dec 2024 – Mar 2025",
+      "responsibilities": [
+        "Built Doj User food delivery web app from scratch using React.js, Hooks, and TailwindCSS.",
+        "Integrated RESTful APIs using Axios for real-time data rendering.",
+        "Developed reusable UI components improving development speed by 30%.",
+        "Ensured pixel-perfect responsive UI and cross-browser compatibility.",
+        "Converted Figma designs into clean, reusable components."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "imageKey": "ShopSphere",
+      "title": "ShopSphere — Full Stack E-Commerce",
+      "techStack": [
+        "React.js",
+        "Redux Toolkit",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "TailwindCSS"
+      ],
+      "description": "Built a scalable full-stack e-commerce platform with custom REST APIs, secure authentication using JWT & Bcrypt, and complete cart/order management system.",
+      "ghLink": "#",
+      "demoLink": "#",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "imageKey": "GupShup",
+      "title": "GupShup — Real-Time Chat App",
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "Socket.io",
+        "MongoDB"
+      ],
+      "description": "Developed a real-time chat application with sub-100ms message delivery using WebSockets and scalable backend architecture.",
+      "ghLink": "#",
+      "demoLink": "#",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "imageKey": "YumXpress",
+      "title": "Yum Xpress",
+      "techStack": [
+        "Java",
+        "JDBC",
+        "Oracle",
+        "Swing"
+      ],
+      "description": "Desktop-based food delivery system built with Java Swing, JDBC, and Oracle DB with order and inventory management.",
+      "ghLink": "https://github.com/Deepak052/YumXpress.git",
+      "demoLink": "#"
+    },
+    {
+      "id": 4,
+      "imageKey": "portfolio",
+      "title": "Portfolio Website",
+      "techStack": [
+        "React.js",
+        "TailwindCSS"
+      ],
+      "description": "Modern responsive portfolio with animations, dark mode, and optimized UI showcasing projects and skills.",
+      "ghLink": "#",
+      "demoLink": "#"
+    },
+    {
+      "id": 5,
+      "imageKey": "NetflixClone",
+      "title": "Netflix Clone",
+      "techStack": [
+        "HTML",
+        "CSS"
+      ],
+      "description": "Frontend clone of Netflix homepage focusing on layout, responsiveness, and UI design.",
+      "ghLink": "#",
+      "demoLink": "#"
+    }
+  ],
+  "skills": {
+    "frontend": [
+      {
+        "icon": "DiHtml5",
+        "name": "HTML5"
+      },
+      {
+        "icon": "DiCss3",
+        "name": "CSS3"
+      },
+      {
+        "icon": "DiJavascript1",
+        "name": "JavaScript"
+      },
+      {
+        "icon": "DiReact",
+        "name": "React.js"
+      },
+      {
+        "icon": "SiRedux",
+        "name": "Redux Toolkit"
+      },
+      {
+        "icon": "SiTailwindcss",
+        "name": "Tailwind CSS"
+      },
+      {
+        "icon": "DiBootstrap",
+        "name": "Bootstrap"
+      }
+    ],
+    "backend": [
+      {
+        "icon": "DiJavascript1",
+        "name": "Node.js"
+      },
+      {
+        "icon": "DiJavascript1",
+        "name": "Express.js"
+      },
+      {
+        "icon": "SiMysql",
+        "name": "MongoDB / MySQL"
+      }
+    ],
+    "languages": [
+      {
+        "icon": "DiJava",
+        "name": "Java"
+      }
+    ],
+    "tools": [
+      {
+        "icon": "SiGithub",
+        "name": "GitHub"
+      },
+      {
+        "icon": "VscVscode",
+        "name": "VS Code"
+      },
+      {
+        "icon": "SiMysql",
+        "name": "MySQL"
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "title": "Frontend Development with React.js",
+      "platform": "Coding Ninjas"
+    },
+    {
+      "title": "JavaScript Algorithms & Data Structures",
+      "platform": "freeCodeCamp"
+    }
+  ]
+}

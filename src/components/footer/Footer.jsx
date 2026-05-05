@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./footer.css";
+import data from "../../data.json";
 
 function Footer() {
   return (
@@ -17,7 +18,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           <span>
             Designed and Developed by{" "}
-            <i className="primary-header">Deepak Mehta</i>
+            <i className="primary-header">{data.personalInfo.name}</i>
           </span>
         </Col>
         <Col md="4" className="footer-body">
@@ -26,7 +27,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="github"
-                href="https://github.com/Deepak052"
+                href={data.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="github"
@@ -50,7 +51,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="email"
-                href="mailto:dmehta052@gmail.com"
+                href={`mailto:${data.socialLinks.email}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="email"
@@ -62,7 +63,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="linkedin"
-                href="https://www.linkedin.com/in/deepakmehta052/"
+                href={data.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="linkedin"
@@ -74,7 +75,7 @@ function Footer() {
               <a
                 style={{ color: `var(--clr-primary)` }}
                 className="instagram"
-                href="https://www.instagram.com/_.deepak_.mehta._/"
+                href={data.socialLinks.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="instagram"

@@ -73,6 +73,7 @@
     backdrop-filter: blur(250px) !important;
   }
 }
+
 .navbar-brand {
   color: var(--clr-txt) !important;
 }
@@ -87,6 +88,7 @@
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
 }
+
 .nav-link {
   padding: 0.8rem 1rem !important;
 }
@@ -99,10 +101,12 @@
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+
   .logo {
     height: 1.9em !important;
     width: 2.5em !important;
   }
+
   .theme-switch {
     display: flex;
     justify-content: center;
@@ -136,7 +140,8 @@
   transition: all 0.3s ease-out 0s;
 }
 
-.navbar-nav .nav-item a:hover::after {
+.navbar-nav .nav-item a:hover::after,
+.navbar-nav .nav-item a.active::after {
   width: 100%;
 }
 
@@ -152,6 +157,7 @@
   box-shadow: 0px 5px 20px -10px var(--shadow);
   transition: background-color 0.3s ease-in;
 }
+
 #toggle .toggle-inner {
   width: 20px;
   height: 15px;
@@ -159,12 +165,15 @@
   border-radius: 1000px;
   transition: margin-left 0.3s ease-in, background-color 0.3s ease-in;
 }
+
 #toggle .toggle-inner.toggle-active {
   margin-left: 20px;
 }
+
 .dark-mode #toggle {
   background-color: var(--clr-txt);
 }
+
 .dark-mode #toggle .toggle-inner {
   background-color: #202523;
 }

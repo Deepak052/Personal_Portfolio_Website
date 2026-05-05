@@ -4,8 +4,11 @@ import myImg from "../../assets/Avatar.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiOutlineMail, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import data from "../../data.json";
 
 function Home2() {
+  const { personalInfo, socialLinks, about } = data;
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -14,32 +17,53 @@ function Home2() {
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
               <span className="primary-header"> ABOUT </span> ME
             </h1>
+
             <p className="home-about-body" data-aos="fade-up">
               <br />
-              I'm a <i className="primary-header">
-                B.Tech Computer Science
+              I'm a{" "}
+              <i className="primary-header">
+                {personalInfo.degree}
               </i>{" "}
-              graduate from Sagar Institute of Research and Technology, Bhopal
-              (2020-2024, CGPA: 7.92), currently working as a{" "}
-              <i className="primary-header">Frontend Web Developer</i> at DOJ
-              App Pvt. Ltd., Noida.
+              graduate from {personalInfo.university} (
+              {personalInfo.duration}, CGPA: {personalInfo.cgpa}), currently
+              working as a{" "}
+              <i className="primary-header">
+                {personalInfo.currentRole}
+              </i>{" "}
+              at {personalInfo.company}, {personalInfo.companyLocation}.
+
               <br />
-              <br />I specialize in building user-friendly web applications
-              using{" "}
-              <i className="primary-header">React.js, TailwindCSS, and Redux</i>
-              , with a focus on optimizing UI/UX and performance.
               <br />
-              <br />I am passionate about learning{" "}
-              <i className="primary-header">new technologies</i> and applying
-              them to real-world projects like YumXpress and WeatherWise360.
+              {about.summary} using{" "}
+              <i className="primary-header">
+                {about.techHighlight.join(", ")}
+              </i>
+              .
+
+              <br />
+              <br />
+              I am passionate about learning{" "}
+              <i className="primary-header">{about.learning}</i> and applying
+              them to real-world projects like{" "}
+              <i className="primary-header">
+                {about.projectsHighlight.join(", ")}
+              </i>
+              .
+
               <br />
               <br />
               Outside of coding, I enjoy{" "}
-              <i className="primary-header">playing cricket</i> and{" "}
-              <i className="primary-header">traveling</i> to explore new
-              cultures.
+              <i className="primary-header">
+                {about.activities[0]}
+              </i>{" "}
+              and{" "}
+              <i className="primary-header">
+                {about.activities[1]}
+              </i>
+              .
             </p>
           </Col>
+
           <Col md={4} className="myAvtar">
             <Tilt>
               <img
@@ -51,16 +75,18 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1 data-aos="fade-right">
               <span className="primary-header">CONNECT </span> WITH ME
             </h1>
             <p data-aos="fade-left">Feel free to connect with me</p>
+
             <ul className="home-about-social-links" data-aos="fade-up">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Deepak052"
+                  href={socialLinks.github}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -69,9 +95,10 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
-                  href="mailto:dmehta052@gmail.com"
+                  href={`mailto:${socialLinks.email}`}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -80,9 +107,10 @@ function Home2() {
                   <AiOutlineMail />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/deepakmehta052/"
+                  href={socialLinks.linkedin}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -91,9 +119,10 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/_.deepak_.mehta._/"
+                  href={socialLinks.instagram}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -109,4 +138,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
